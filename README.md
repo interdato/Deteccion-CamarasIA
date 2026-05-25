@@ -15,15 +15,19 @@ https://interdato.github.io/Deteccion-CamarasIA/
 - Ergonomía y postura, incluyendo alerta por brazos por encima de hombros.
 - Detección de comportamientos de riesgo de robo.
 - Luces de seguridad en planta con PiPHOTONICS para grúas, montacargas, pasillos, perímetros y operación nocturna.
+- Material comercial descargable en PDF y QR para compartir el portafolio.
 
 ## Estructura
 
 ```text
 index.html
 styles.css
+photonics.css
+material.css
 script.js
 .nojekyll
 assets/
+  docs/
   images/
     photonics/
   videos/
@@ -36,3 +40,4 @@ assets/
 - Interacciones: editar `script.js`.
 - Videos: reemplazar archivos en `assets/videos/` manteniendo el mismo nombre.
 - Posters e imágenes: reemplazar archivos en `assets/images/` manteniendo el mismo nombre.
+- Material comercial: editar `assets/docs/portafolio-seguridad-ia-luces-interdato.html` y regenerar el PDF.
