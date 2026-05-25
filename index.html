@@ -108,13 +108,28 @@
           </article>
 
           <article id="racks" class="panel">
-            <video controls playsinline poster="assets/images/poster-inventario-racks.jpg">
-              <source src="assets/videos/inventario-racks.mp4">
-            </video>
+            <div class="rack-demo">
+              <img src="assets/images/racks-industriales-estados.png" alt="Racks industriales con estados lleno, hay espacio y vacío">
+              <div class="rack-states">
+                <span class="rack-state full">Lleno</span>
+                <span class="rack-state space">Hay espacio</span>
+                <span class="rack-state empty">Vacío</span>
+              </div>
+              <video controls playsinline poster="assets/images/poster-inventario-racks.jpg">
+                <source src="assets/videos/inventario-racks.mp4">
+              </video>
+            </div>
             <div>
               <span class="tag">Almacén</span>
-              <h3>Inventario visual en racks</h3>
-              <p>Identifica ocupación, vacíos, presencia de pallets o diferencias visuales contra un estado esperado.</p>
+              <h3>Inventario visual en racks industriales</h3>
+              <p>Clasifica cada posición del rack para saber si está lleno, tiene espacio disponible o quedó vacío.</p>
+              <ul>
+                <li><b>Lleno:</b> bahía ocupada sin capacidad disponible.</li>
+                <li><b>Hay espacio:</b> ocupación parcial para reabasto o acomodo.</li>
+                <li><b>Vacío:</b> posición libre o diferencia contra inventario esperado.</li>
+              </ul>
+              <button class="btn primary" id="simulateRack">Simular alerta de rack</button>
+              <div class="event" id="rackEvent">Rack sin cambios críticos</div>
             </div>
           </article>
 

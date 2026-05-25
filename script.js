@@ -1,4 +1,35 @@
-document.getElementById('menu')?.addEventListener('click',()=>document.getElementById('links')?.classList.toggle('open'));
-document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.tab)?.classList.add('active')}));
-const events=['Incumplimiento de EPP · lentes no detectados · correo enviado','Zona de riesgo · persona dentro de perímetro · prioridad alta','Postura de riesgo · registrar evento preventivo','Rack B-14 · ocupación cambió · actualizar tablero','Actividad inusual · zona sensible · requiere revisión'];
-document.getElementById('simulate')?.addEventListener('click',()=>{document.getElementById('event').textContent=events[Math.floor(Math.random()*events.length)]});
+document.getElementById('menu')?.addEventListener('click', () => {
+  document.getElementById('links')?.classList.toggle('open');
+});
+
+document.querySelectorAll('[data-tab]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-tab]').forEach((item) => item.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach((panel) => panel.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab)?.classList.add('active');
+  });
+});
+
+const events = [
+  'Incumplimiento de EPP · lentes no detectados · correo enviado',
+  'Zona de riesgo · persona dentro de perímetro · prioridad alta',
+  'Postura de riesgo · registrar evento preventivo',
+  'Rack B-14 · ocupación cambió · actualizar tablero',
+  'Actividad inusual · zona sensible · requiere revisión',
+];
+
+const rackEvents = [
+  'Rack A-01 · Lleno · bloquear reabasto automático',
+  'Rack B-14 · Hay espacio · sugerir acomodo de pallet',
+  'Rack C-07 · Vacío · validar contra inventario esperado',
+  'Rack D-03 · Cambio de ocupación · enviar alerta a almacén',
+];
+
+document.getElementById('simulate')?.addEventListener('click', () => {
+  document.getElementById('event').textContent = events[Math.floor(Math.random() * events.length)];
+});
+
+document.getElementById('simulateRack')?.addEventListener('click', () => {
+  document.getElementById('rackEvent').textContent = rackEvents[Math.floor(Math.random() * rackEvents.length)];
+});

@@ -11,7 +11,7 @@ https://interdato.github.io/Deteccion-CamarasIA/
 - Validación de EPP.
 - Alertamiento automático.
 - Zonas de riesgo.
-- Inventario visual en racks.
+- Inventario visual en racks industriales con estados lleno, hay espacio y vacío.
 - Ergonomía y postura.
 - Detección de comportamientos de riesgo de robo.
 
