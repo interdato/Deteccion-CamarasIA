@@ -33,3 +33,22 @@ document.getElementById('simulate')?.addEventListener('click', () => {
 document.getElementById('simulateRack')?.addEventListener('click', () => {
   document.getElementById('rackEvent').textContent = rackEvents[Math.floor(Math.random() * rackEvents.length)];
 });
+
+const lightMain = document.getElementById('lightMain');
+const lightTag = document.getElementById('lightTag');
+const lightTitle = document.getElementById('lightTitle');
+const lightDesc = document.getElementById('lightDesc');
+
+document.querySelectorAll('[data-light-image]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-light-image]').forEach((item) => item.classList.remove('active'));
+    btn.classList.add('active');
+    if (lightMain) {
+      lightMain.src = btn.dataset.lightImage;
+      lightMain.alt = btn.dataset.lightTitle || 'Demo de luces de seguridad industrial';
+    }
+    if (lightTag) lightTag.textContent = btn.dataset.lightTag || '';
+    if (lightTitle) lightTitle.textContent = btn.dataset.lightTitle || '';
+    if (lightDesc) lightDesc.textContent = btn.dataset.lightDesc || '';
+  });
+});

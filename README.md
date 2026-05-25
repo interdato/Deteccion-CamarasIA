@@ -14,6 +14,7 @@ https://interdato.github.io/Deteccion-CamarasIA/
 - Inventario visual en racks industriales con estados lleno, hay espacio y vacío.
 - Ergonomía y postura.
 - Detección de comportamientos de riesgo de robo.
+- Luces de seguridad en planta con PiPHOTONICS para grúas, montacargas, pasillos, perímetros y operación nocturna.
 
 ## Estructura
 
@@ -24,6 +25,7 @@ script.js
 .nojekyll
 assets/
   images/
+    photonics/
   videos/
 ```
 
