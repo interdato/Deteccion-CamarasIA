@@ -136,13 +136,23 @@
           </article>
 
           <article id="ergonomia" class="panel">
-            <video controls playsinline poster="assets/images/poster-postura-ergonomia.jpg">
-              <source src="assets/videos/postura-ergonomia.mp4">
-            </video>
+            <div class="ergo-demo">
+              <video controls playsinline poster="assets/images/poster-postura-ergonomia.jpg">
+                <source src="assets/videos/postura-ergonomia.mp4">
+              </video>
+              <img src="assets/images/ergonomia-brazos-sobre-hombros.png" alt="Alerta ergonómica por brazos arriba de los hombros">
+            </div>
             <div>
               <span class="tag">Ergonomía</span>
               <h3>Detección de postura y riesgo ergonómico</h3>
               <p>Estima posturas, ángulos corporales y patrones de movimiento para apoyar programas preventivos.</p>
+              <ul>
+                <li>Detecta brazos por encima de los hombros.</li>
+                <li>Registra permanencia o repetición de la postura.</li>
+                <li>Envía alerta preventiva para revisión ergonómica.</li>
+              </ul>
+              <button class="btn primary" id="simulateErgo">Simular alerta ergonómica</button>
+              <div class="event" id="ergoEvent">Sin alerta ergonómica activa</div>
             </div>
           </article>
 

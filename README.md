@@ -12,7 +12,7 @@ https://interdato.github.io/Deteccion-CamarasIA/
 - Alertamiento automático.
 - Zonas de riesgo.
 - Inventario visual en racks industriales con estados lleno, hay espacio y vacío.
-- Ergonomía y postura.
+- Ergonomía y postura, incluyendo alerta por brazos por encima de hombros.
 - Detección de comportamientos de riesgo de robo.
 - Luces de seguridad en planta con PiPHOTONICS para grúas, montacargas, pasillos, perímetros y operación nocturna.
 

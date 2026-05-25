@@ -26,12 +26,22 @@ const rackEvents = [
   'Rack D-03 · Cambio de ocupación · enviar alerta a almacén',
 ];
 
+const ergoEvents = [
+  'Ergonomía · brazos sobre hombros · alerta preventiva enviada',
+  'Postura crítica · alcance elevado sostenido · revisar estación',
+  'Riesgo ergonómico · repetición de brazos elevados · registrar evento',
+];
+
 document.getElementById('simulate')?.addEventListener('click', () => {
   document.getElementById('event').textContent = events[Math.floor(Math.random() * events.length)];
 });
 
 document.getElementById('simulateRack')?.addEventListener('click', () => {
   document.getElementById('rackEvent').textContent = rackEvents[Math.floor(Math.random() * rackEvents.length)];
+});
+
+document.getElementById('simulateErgo')?.addEventListener('click', () => {
+  document.getElementById('ergoEvent').textContent = ergoEvents[Math.floor(Math.random() * ergoEvents.length)];
 });
 
 const lightMain = document.getElementById('lightMain');
