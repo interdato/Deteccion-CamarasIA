@@ -1,0 +1,4 @@
+document.getElementById('menu')?.addEventListener('click',()=>document.getElementById('links')?.classList.toggle('open'));
+document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.tab)?.classList.add('active')}));
+const events=['Incumplimiento de EPP · lentes no detectados · correo enviado','Zona de riesgo · persona dentro de perímetro · prioridad alta','Postura de riesgo · registrar evento preventivo','Rack B-14 · ocupación cambió · actualizar tablero','Actividad inusual · zona sensible · requiere revisión'];
+document.getElementById('simulate')?.addEventListener('click',()=>{document.getElementById('event').textContent=events[Math.floor(Math.random()*events.length)]});
