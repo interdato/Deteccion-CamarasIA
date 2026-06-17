@@ -48,6 +48,18 @@ const lightMain = document.getElementById('lightMain');
 const lightTag = document.getElementById('lightTag');
 const lightTitle = document.getElementById('lightTitle');
 const lightDesc = document.getElementById('lightDesc');
+const lightStandard = document.getElementById('lightStandard');
+
+const lightStandards = {
+  'Grúas': 'Apoya advertencias visuales para maniobras de izaje y zonas de riesgo conforme a NOM-006-STPS-2023, NOM-026-STPS-2008, ISO 7010 e ISO 12100:2010.',
+  'Montacargas': 'Refuerza la separación visual entre equipo móvil y peatones en manejo de materiales, alineado a NOM-006-STPS-2023, NOM-026-STPS-2008 e ISO 7010.',
+  'Pasillos': 'Satisface necesidades de señalización de rutas, cruces y zonas seguras conforme a NOM-026-STPS-2008, ISO 7010 e ISO 45001:2018.',
+  'Perímetros': 'Ayuda a delimitar zonas de no ingreso y puntos de operación de maquinaria bajo NOM-004-STPS-1999, NOM-026-STPS-2008, ISO 7010 e ISO 12100:2010.',
+  'Dirección': 'Apoya señales direccionales, advertencias y guías de flujo conforme a NOM-026-STPS-2008 e ISO 7010.',
+  'Noche': 'Refuerza condiciones de visibilidad en patios y áreas de baja iluminación conforme a NOM-025-STPS-2008 y NOM-026-STPS-2008.',
+  'Equipo': 'Complementa controles visuales en maquinaria y áreas de trabajo conforme a NOM-004-STPS-1999, NOM-026-STPS-2008 e ISO 12100:2010.',
+  'Producto': 'Permite implementar patrones y colores de advertencia compatibles con NOM-026-STPS-2008 e ISO 7010.',
+};
 
 document.querySelectorAll('[data-light-image]').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -60,5 +72,6 @@ document.querySelectorAll('[data-light-image]').forEach((btn) => {
     if (lightTag) lightTag.textContent = btn.dataset.lightTag || '';
     if (lightTitle) lightTitle.textContent = btn.dataset.lightTitle || '';
     if (lightDesc) lightDesc.textContent = btn.dataset.lightDesc || '';
+    if (lightStandard) lightStandard.textContent = lightStandards[btn.dataset.lightTag] || lightStandards.Producto;
   });
 });

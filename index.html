@@ -83,6 +83,10 @@
                 <li>Evidencia visual para auditorías.</li>
                 <li>Indicadores por cámara, turno o área.</li>
               </ul>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Apoya la supervisión y evidencia de uso de EPP conforme a NOM-017-STPS-2024, dentro de programas de seguridad y salud alineados a ISO 45001:2018.</p>
+              </div>
             </div>
           </article>
 
@@ -97,6 +101,10 @@
               <span class="tag">Automatización</span>
               <h3>Alertamiento automático con evidencia</h3>
               <p>Cuando el modelo detecta una condición crítica, el sistema envía alerta con imagen, fecha, cámara y regla incumplida.</p>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Genera registros trazables para investigación, seguimiento y mejora preventiva, útil para NOM-019-STPS-2011, NOM-030-STPS-2009 e ISO 45001:2018.</p>
+              </div>
               <button class="btn primary" id="simulate">Simular alerta</button>
               <div class="event" id="event">Sin alerta crítica activa</div>
             </div>
@@ -108,6 +116,10 @@
               <span class="tag">Prevención operativa</span>
               <h3>Zonas restringidas, perímetros y permanencia</h3>
               <p>Define áreas virtuales sobre video para detectar presencia, permanencia, cruce de línea o ingreso no autorizado en accesos críticos.</p>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Refuerza controles de acceso a zonas peligrosas y segregación visual conforme a NOM-004-STPS-1999, NOM-026-STPS-2008, ISO 12100:2010 e ISO 45001:2018.</p>
+              </div>
             </div>
           </article>
 
@@ -132,6 +144,10 @@
                 <li><b>Hay espacio:</b> ocupación parcial para reabasto o acomodo.</li>
                 <li><b>Vacío:</b> posición libre o diferencia contra inventario esperado.</li>
               </ul>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Apoya el control de almacenamiento y manejo de materiales con maquinaria conforme a NOM-006-STPS-2023, más evidencia para NOM-030-STPS-2009.</p>
+              </div>
               <button class="btn primary" id="simulateRack">Simular alerta de rack</button>
               <div class="event" id="rackEvent">Rack sin cambios críticos</div>
             </div>
@@ -153,6 +169,10 @@
                 <li>Registra permanencia o repetición de la postura.</li>
                 <li>Envía alerta preventiva para revisión ergonómica.</li>
               </ul>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Documenta factores de riesgo ergonómico para análisis preventivo conforme a NOM-036-1-STPS-2018 e ISO 11228-3:2026.</p>
+              </div>
               <button class="btn primary" id="simulateErgo">Simular alerta ergonómica</button>
               <div class="event" id="ergoEvent">Sin alerta ergonómica activa</div>
             </div>
@@ -174,6 +194,10 @@
               <span class="tag">Seguridad patrimonial</span>
               <h3>Detección de comportamientos de riesgo de robo</h3>
               <p>Apoya el monitoreo de eventos sospechosos, manipulación irregular, permanencia inusual o zonas sensibles.</p>
+              <div class="standard-note">
+                <b>Punto regulatorio / estándar</b>
+                <p>Contribuye al monitoreo y tratamiento de riesgos de seguridad patrimonial bajo ISO 28000:2022 e ISO 31000:2018.</p>
+              </div>
             </div>
           </article>
         </div>
@@ -196,6 +220,10 @@
                 <span class="tag" id="lightTag">Grúas</span>
                 <h3 id="lightTitle">Perímetro de seguridad para carga suspendida</h3>
                 <p id="lightDesc">Proyección visible alrededor del gancho o la carga para advertir el radio de operación y mantener distancia segura.</p>
+                <div class="standard-note light-standard">
+                  <b>Punto regulatorio / estándar</b>
+                  <p id="lightStandard">Apoya advertencias visuales para maniobras de izaje y zonas de riesgo conforme a NOM-006-STPS-2023, NOM-026-STPS-2008, ISO 7010 e ISO 12100:2010.</p>
+                </div>
               </div>
               <div class="light-video">
                 <video controls playsinline preload="metadata">
@@ -274,21 +302,25 @@
               <b>01</b>
               <h3>Grúas y carga suspendida</h3>
               <p>Radio de seguridad, guía de carga y advertencia visual para operadores y peatones.</p>
+              <small class="standard-chip">NOM-006-STPS-2023 · NOM-026-STPS-2008 · ISO 12100</small>
             </article>
             <article>
               <b>02</b>
               <h3>Montacargas</h3>
               <p>Perímetros, flechas de dirección y zonas de acercamiento alrededor del equipo móvil.</p>
+              <small class="standard-chip">NOM-006-STPS-2023 · NOM-026-STPS-2008 · ISO 7010</small>
             </article>
             <article>
               <b>03</b>
               <h3>Pasillos y perímetros</h3>
               <p>Líneas visibles para rutas seguras, cruces, zonas restringidas y áreas temporales.</p>
+              <small class="standard-chip">NOM-026-STPS-2008 · ISO 7010 · ISO 45001</small>
             </article>
             <article>
               <b>04</b>
               <h3>Operación nocturna</h3>
               <p>Señalización luminosa para patios, áreas exteriores y entornos con baja visibilidad.</p>
+              <small class="standard-chip">NOM-025-STPS-2008 · NOM-026-STPS-2008</small>
             </article>
           </div>
         </div>
@@ -303,36 +335,43 @@
               <b>01</b>
               <h3>Cumplimiento EPP</h3>
               <p>Validación visual por zona.</p>
+              <small class="standard-chip">NOM-017-STPS-2024 · ISO 45001</small>
             </article>
             <article>
               <b>02</b>
               <h3>Zonas restringidas</h3>
               <p>Perímetros, cruces y permanencia.</p>
+              <small class="standard-chip">NOM-004-STPS-1999 · NOM-026-STPS-2008 · ISO 12100</small>
             </article>
             <article>
               <b>03</b>
               <h3>Alertamiento</h3>
               <p>Correo, evidencia, dashboard y bitácora.</p>
+              <small class="standard-chip">NOM-019-STPS-2011 · NOM-030-STPS-2009 · ISO 45001</small>
             </article>
             <article>
               <b>04</b>
               <h3>Racks e inventario</h3>
               <p>Ocupación y auditoría visual.</p>
+              <small class="standard-chip">NOM-006-STPS-2023 · NOM-030-STPS-2009</small>
             </article>
             <article>
               <b>05</b>
               <h3>Ergonomía</h3>
               <p>Posturas y movimientos de riesgo.</p>
+              <small class="standard-chip">NOM-036-1-STPS-2018 · ISO 11228-3:2026</small>
             </article>
             <article>
               <b>06</b>
               <h3>Robo</h3>
               <p>Actividad inusual y revisión humana.</p>
+              <small class="standard-chip">ISO 28000:2022 · ISO 31000:2018</small>
             </article>
             <article>
               <b>07</b>
               <h3>Luces de seguridad</h3>
               <p>PiPHOTONICS para grúas, montacargas, pasillos y perímetros.</p>
+              <small class="standard-chip">NOM-006 · NOM-026 · NOM-025 · ISO 7010</small>
             </article>
           </div>
         </div>
