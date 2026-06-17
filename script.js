@@ -30,6 +30,7 @@ const ergoEvents = [
   'Ergonomía · brazos sobre hombros · alerta preventiva enviada',
   'Postura crítica · alcance elevado sostenido · revisar estación',
   'Riesgo ergonómico · repetición de brazos elevados · registrar evento',
+  'Ergonomía · movimientos repetitivos detectados · alerta preventiva enviada',
 ];
 
 document.getElementById('simulate')?.addEventListener('click', () => {
