@@ -14,13 +14,16 @@
         background: #f4f8fb;
       }
       .page {
-        min-height: 10in;
-        padding: 28px;
+        padding: 24px;
         background: #fff;
         border: 1px solid #dce7ee;
+        break-after: page;
         page-break-after: always;
       }
-      .page:last-child { page-break-after: auto; }
+      .page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
       .hero {
         display: grid;
         grid-template-columns: 1.08fr .92fr;
@@ -74,22 +77,42 @@
       }
       .card {
         min-height: 122px;
-        padding: 16px;
+        padding: 14px;
         border: 1px solid #dce7ee;
         border-radius: 14px;
         background: #f8fbfd;
       }
+      .case-card {
+        display: grid;
+        gap: 6px;
+        min-height: 0;
+        padding: 10px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .case-img {
+        width: 100%;
+        height: 74px;
+        object-fit: cover;
+        border: 1px solid #d5e4ed;
+        border-radius: 10px;
+      }
       .card b {
         display: inline-block;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         color: #08718c;
-        font-size: 13px;
+        font-size: 12px;
       }
+      .card h3 { font-size: 14px; }
+      .card p { font-size: 12px; line-height: 1.34; }
+      .case-card h3 { font-size: 12.5px; margin-bottom: 3px; }
+      .case-card p { font-size: 10.8px; line-height: 1.25; margin-bottom: 2px; }
+      .case-card .standard { font-size: 8.8px; }
       .standard {
         display: block;
-        margin-top: 10px;
+        margin-top: 6px;
         color: #08718c;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: 900;
         line-height: 1.32;
       }
@@ -157,37 +180,43 @@
     <section class="page">
       <h2>Casos de Visión IA Industrial</h2>
       <div class="grid">
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/poster-epp-validacion-2.jpg" alt="Validación visual de EPP">
           <b>01 · Cumplimiento EPP</b>
           <h3>Validación de equipo de protección personal</h3>
           <p>Detección de personas y reglas de casco, chaleco, lentes, guantes o protección auditiva con evidencia para auditoría.</p>
           <span class="standard">NOM-017-STPS-2024 · ISO 45001:2018</span>
         </article>
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/alerta-email.jpg" alt="Alerta automática con evidencia visual">
           <b>02 · Alertamiento automático</b>
           <h3>Eventos con imagen, fecha y cámara</h3>
           <p>Alertas por correo, dashboard, API o sistema interno cuando se detecta una condición crítica.</p>
           <span class="standard">NOM-019-STPS-2011 · NOM-030-STPS-2009 · ISO 45001:2018</span>
         </article>
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/zonas-restringidas-perimetros.png" alt="Zonas restringidas y perímetros en video">
           <b>03 · Zonas restringidas</b>
           <h3>Perímetros, cruces y permanencia</h3>
           <p>Áreas virtuales sobre video para detectar presencia, cruce de línea o ingreso no autorizado.</p>
           <span class="standard">NOM-004-STPS-1999 · NOM-026-STPS-2008 · ISO 12100:2010</span>
         </article>
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/racks-industriales-estados.png" alt="Estados visuales de racks industriales">
           <b>04 · Racks industriales</b>
           <h3>Lleno, hay espacio o vacío</h3>
           <p>Clasificación visual de posiciones de rack para identificar ocupación, faltantes y diferencias contra inventario esperado.</p>
           <span class="standard">NOM-006-STPS-2023 · NOM-030-STPS-2009</span>
         </article>
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/ergonomia-brazos-sobre-hombros.png" alt="Detección ergonómica de brazos sobre hombros">
           <b>05 · Ergonomía y postura</b>
           <h3>Brazos sobre hombros y posturas de riesgo</h3>
           <p>Registro de permanencia o repetición de posturas que ameritan alerta preventiva y revisión ergonómica.</p>
           <span class="standard">NOM-036-1-STPS-2018 · ISO 11228-3:2026</span>
         </article>
-        <article class="card">
+        <article class="card case-card">
+          <img class="case-img" src="../images/poster-deteccion-riesgo-robo.jpg" alt="Detección de comportamiento de riesgo">
           <b>06 · Seguridad patrimonial</b>
           <h3>Comportamientos de riesgo de robo</h3>
           <p>Apoyo al monitoreo de actividad inusual, manipulación irregular, permanencia y zonas sensibles.</p>
