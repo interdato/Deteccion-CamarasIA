@@ -22,7 +22,7 @@ https://interdato.github.io/Deteccion-CamarasIA/
 ```text
 index.html
 styles.css
-photonics.css
+luces.css
 material.css
 script.js
 .nojekyll
